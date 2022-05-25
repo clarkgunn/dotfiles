@@ -1,8 +1,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
-export EDITOR="/usr/local/bin/emacs"
-export VISUAL="/usr/local/bin/emacs"
 export ZSH="/Users/clark/.oh-my-zsh"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH=/usr/local/share/python:$PATH
+export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
+export GEM_HOME="$HOME/.gem"
+export PATH="/Users/clark/.deno/bin:$PATH"
 
 SPACESHIP_PROMPT_ORDER=(
   git_user
@@ -17,7 +19,6 @@ SPACESHIP_PROMPT_ORDER=(
   ruby          # Ruby section
   xcode         # Xcode section
   swift         # Swift section
-  php           # PHP section
   rust          # Rust section
   docker        # Docker section
   aws           # Amazon Web Services section
@@ -42,3 +43,19 @@ source ~/.zsh_aliases
 source ~/.zsh_functions
 
 archey
+
+# Add Visual Studio Code (code)
+# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/usr/local/sbin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Deno
+fpath=(~/.zsh $fpath)
+fpath+=~/.zfunc
+autoload -Uz compinit
+compinit -u
