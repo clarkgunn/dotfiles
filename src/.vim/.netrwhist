@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/clark/Exercism/rust/leap/tests'
+let g:netrw_dirhist_4='/Users/clark/Exercism/rust/leap/src'
+let g:netrw_dirhist_3='/Users/clark/Exercism/rust/leap'
+let g:netrw_dirhist_2='/Users/clark/Exercism/rust/leap/tests'
+let g:netrw_dirhist_1='/Users/clark/Exercism/rust/leap'
+let g:netrw_dirhist_0='/Users/clark/Exercism/rust/leap/src'
+let g:netrw_dirhist_9='/Users/clark/Exercism/rust/leap'
+let g:netrw_dirhist_8='/Users/clark/Exercism/rust/lucians-luscious-lasagna/tests'
+let g:netrw_dirhist_7='/Users/clark/Exercism/rust/lucians-luscious-lasagna'
+let g:netrw_dirhist_6='/Users/clark/Exercism/rust/lucians-luscious-lasagna/src'
