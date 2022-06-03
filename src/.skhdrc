@@ -1,4 +1,4 @@
-# ################################################################ #
+ ################################################################ #
 # THE FOLLOWING IS AN EXPLANATION OF THE GRAMMAR THAT SKHD PARSES. #
 # FOR SIMPLE EXAMPLE MAPPINGS LOOK FURTHER DOWN THIS FILE..        #
 # ################################################################ #
@@ -83,8 +83,11 @@ shift - delete : \
 
 # focus window
 ctrl - h : yabai -m window --focus prev
-ctrl - j : yabai -m window --focus next
+ctrl - l : yabai -m window --focus next
 
+# Focus screen
+ctrl + shift - h : yabai -m space --focus prev
+ctrl + shift - l : yabai -m space --focus next
 
 # focus monitor
 ctrl - 1  : yabai -m display --focus 1

@@ -5,7 +5,7 @@ sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # Ignore iTerm
-yabai -m rule --add app="^iTerm.*$" sticky=on layer=above manage=off
+# yabai -m rule --add app="^iTerm.*$" sticky=on layer=above manage=on
 
 # bar settings
 yabai -m config status_bar                   off
