@@ -1,5 +1,4 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export EDITOR="/usr/bin/vim"
@@ -12,10 +11,8 @@ export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export GEM_HOME="$HOME/.gem"
 export PATH="/Users/clark/.deno/bin:$PATH"
 
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# (cat ~/.cache/wal/sequences &)
+source ~/.zsh_functions
+source ~/.zsh_aliases
 
 # To add support for TTYs this line can be optionally added.
 # source ~/.cache/wal/colors-tty.sh
@@ -53,8 +50,6 @@ ZSH_THEME="spaceship"
 plugins=(git npm zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh_aliases
-source ~/.zsh_functions
 
 archey
 
@@ -77,6 +72,4 @@ fpath+=~/.zfunc
 autoload -Uz compinit
 compinit -u
 
-# Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
 export TERM=xterm-256color
